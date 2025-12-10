@@ -20,10 +20,10 @@ const Navbar = () => {
 
       <div className="nav-right">
         <Link to="/login">
-          <button className="btn login-btn">Login</button>
+          <button className="btn nav1-btn">Login</button>
         </Link>
         <Link to="/register">
-          <button className="btn register-btn">Register</button>
+          <button className="btn nav2-btn">Register</button>
         </Link>
       </div>
     </nav>

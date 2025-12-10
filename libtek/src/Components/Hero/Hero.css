@@ -1,17 +1,19 @@
 .landing-container {
-  background: #7d2f3b;
   min-height: 100vh;
-  padding-bottom: 60px;
-    background: linear-gradient(
+  padding-bottom: 0;              
+  background: linear-gradient(
     to bottom right,
     rgb(139, 35, 50),
     rgb(101, 25, 36)
   );
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-section {
   text-align: center;
   padding-top: 60px;
+  padding-bottom: 20px;          
 }
 
 .hero-logo {
@@ -52,7 +54,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  padding: 40px 80px;
+  padding: 30px 80px;             
+  margin-bottom: 20px;            
 }
 
 .feature-card {
@@ -60,40 +63,67 @@
   border: 2px solid rgba(212, 161, 30, 0.4);
   padding: 30px;
   border-radius: 20px;
-  text-align: left;
   color: white;
   backdrop-filter: blur(4px);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.icon-placeholder,
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.feature-desc {
+  font-size: 14px;
+  opacity: 0.85;
 }
 
 .feature-card2 {
+  grid-column: span 4;                
+  width: 40%;                         
+  margin: 0 auto;                    
+  margin-top: 20px;                  
   background: rgba(255, 255, 255, 0.06);
   border: 2px solid rgba(212, 161, 30, 0.4);
   padding: 30px;
   border-radius: 20px;
   color: white;
   backdrop-filter: blur(4px);
-  
+  text-align: center;                  
 }
 
-.icon-placeholder {
-  width: 55px;
-  height: 55px;
-  border-radius: 10px;
-  background: rgba(212, 161, 30, 0.4);
+.why-title {
   margin-bottom: 15px;
+  font-size: 28px;
 }
 
-.feature-text {
-  font-size: 18px;
-  font-weight: 500;
+.why-list {
+  display: inline-block;               
+  text-align: left;                   
+  margin: 0 auto;                      
+  line-height: 1.6;
 }
+
 
 .footer {
+  margin-top: auto;                  
   width: 100%;
   padding: 18px 40px;
   background: #7d2f3bdf;
-  display: flex;
+  display: inline;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid #d4a11e;
+  border-top: 3px solid #d4a11e;
+  text-align: center;    
+  color: white;
 }

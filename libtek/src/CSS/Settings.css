@@ -1,0 +1,135 @@
+.settings-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: #fff1f1;
+  overflow: hidden;
+}
+
+.settings-content {
+  flex: 1;
+  padding: 40px 50px;
+  overflow-y: auto;
+}
+
+.back-link {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #8b2332;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.settings-box {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  border: 1px solid #f2d27a;
+  border-radius: 14px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  margin: 100px auto;
+}
+
+.settings-header {
+  background: #7a1424;
+  padding: 18px 25px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 14px 14px 0 0;
+}
+
+.settings-title {
+  padding: 20px 25px 10px 25px;
+}
+
+.settings-title h3 {
+  font-size: 18px;
+  color: #7a1424;
+  margin-bottom: 4px;
+}
+
+.settings-title p {
+  font-size: 13px;
+  color: gray;
+}
+
+.settings-form {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.settings-input-box label {
+  margin-bottom: 4px;
+  font-size: 13px;
+  color: #7a1424;
+  font-weight: 500;
+}
+
+.settings-input-box input {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.settings-input-box input:focus {
+  border-color: #8b2332;
+  box-shadow: 0 0 0 2px rgba(139, 35, 50, 0.15);
+}
+
+.save-btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 42px;
+  background: #8b2332;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.save-btn:hover {
+  background: #701624;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #701624;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  margin-top: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.settings-error {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+

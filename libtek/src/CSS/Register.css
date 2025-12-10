@@ -1,0 +1,141 @@
+
+.register-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgb(139, 35, 50), rgb(101, 25, 36));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.register-box {
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+}
+
+.register-logo {
+  height: 75px;
+  margin-bottom: 10px;
+}
+
+.register-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(139, 35, 50);
+  margin-bottom: 4px;
+}
+
+.register-subtitle {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.register-input-box {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.register-input-box label {
+  font-size: 14px;
+  color: rgb(90, 20, 28);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.register-input-box input,
+.register-input-box select {
+  width: 100%;
+  height: 40px;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.register-input-box input:focus,
+.register-input-box select:focus {
+  border-color: rgb(139, 35, 50);
+  box-shadow: 0 0 0 2px rgba(139, 35, 50, 0.2);
+}
+
+.register-row {
+  display: flex;
+  gap: 12px;
+}
+
+.register-row .register-input-box {
+  flex: 1;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  background: rgb(139, 35, 50);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 12px;
+}
+
+.register-btn:hover {
+  background: rgb(101, 25, 36);
+}
+
+.register-home-btn {
+  width: 100%;
+  padding: 10px;
+  background: white;
+  border: 2px solid gold;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.register-home-btn:hover {
+  background: rgba(255, 215, 0, 0.2);
+}
+
+.register-login-link {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.register-login-link span {
+  color: rgb(139, 35, 50);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.register-login-link span:hover {
+  text-decoration: underline;
+}
+
+.error-text {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.input-error {
+  border: 1px solid #ff4d4f !important;
+  background-color: #fff1f0;
+}
