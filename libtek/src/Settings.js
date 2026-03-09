@@ -52,7 +52,7 @@ const Settings = () => {
       newPassword,
     };
 
-    const res = await fetch("http://localhost:8080/api/user/updatePassword", {
+    const res = await fetch("https://libtekbackend-1.onrender.com/api/user/updatePassword", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(requestData),
@@ -92,7 +92,7 @@ const Settings = () => {
         const user = JSON.parse(localStorage.getItem("user"));
 
         const res = await fetch(
-          `http://localhost:8080/api/user/deleteUser/${user.userId}`,
+          `https://libtekbackend-1.onrender.com/api/user/deleteUser/${user.userId}`,
           { method: "DELETE" }
         );
 
