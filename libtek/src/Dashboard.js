@@ -25,7 +25,7 @@ export default function Dashboard() {
 
     setUser(storedUserObj.firstname);
 
-    fetch("http://localhost:8080/api/reservation/getAllReservations")
+    fetch("https://libtekbackend-1.onrender.com/api/reservation/getAllReservations")
       .then((res) => res.json())
       .then((data) => {
         const userReservations = data.filter(
