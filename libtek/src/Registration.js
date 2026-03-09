@@ -61,7 +61,7 @@ const Registration = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/user/postUser", {
+      const response = await fetch("https://libtekbackend-1.onrender.com/api/user/postUser", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
