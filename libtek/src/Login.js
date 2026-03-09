@@ -40,7 +40,7 @@ const Login = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/user/login", {
+      const response = await fetch("https://libtekbackend-1.onrender.com/api/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
