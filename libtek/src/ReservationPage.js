@@ -30,7 +30,7 @@ export default function Reservation() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/booth/getAllBooths")
+    fetch("https://libtekbackend-1.onrender.com/api/booth/getAllBooths")
       .then((res) => res.json())
       .then((data) => setBooths(data))
       .catch((err) => console.error("Error loading booths:", err));
@@ -54,7 +54,7 @@ export default function Reservation() {
     };
 
     const res = await fetch(
-      "http://localhost:8080/api/reservation/newReservation",
+      "https://libtekbackend-1.onrender.com/api/reservation/newReservation",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
