@@ -37,8 +37,12 @@ export default function Reservation() {
   }, []);
 
   const handleSubmit = async () => {
-    if (!selectedBooth || !date || !selectedTime || !duration) {
-      showToast("Please complete all fields.");
+    const selectedDate = new Date(date);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    if (selectedDate < today) {
+      showToast("Cannot book past dates.");
       return;
     }
 
@@ -102,6 +106,7 @@ export default function Reservation() {
               <input
                 type="date"
                 value={date}
+                min={new Date().toISOString().split("T")[0]}
                 onChange={(e) => setDate(e.target.value)}
               />
 
