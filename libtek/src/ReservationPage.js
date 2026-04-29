@@ -14,13 +14,6 @@ export default function Reservation() {
 
   const navigate = useNavigate();
   
-    useEffect(() => {
-    const user = localStorage.getItem("user");
-
-    if (!user) {
-      navigate("/login");
-    }
-  }, []);
 
   const showToast = (msg) => {
     setToast({ show: true, message: msg });
@@ -74,12 +67,18 @@ export default function Reservation() {
       }
     );
 
-    if (res.ok) {
-      showToast("Reservation created successfully!");
-      setTimeout(() => navigate("/home"), 1200);
+  if (res.ok) {
+    showToast("Reservation created successfully!");
+    setTimeout(() => navigate("/home"), 1200);
+  } else {
+    const errorText = await res.text();
+  
+    if (errorText.includes("Maximum of 3")) {
+      showToast("You have exceeded the maximum of 3 active reservations.");
     } else {
-      showToast("Failed to create reservation.");
+      showToast(errorText || "Failed to create reservation.");
     }
+  }
   };
 
   return (
