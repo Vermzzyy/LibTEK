@@ -13,6 +13,14 @@ export default function Reservation() {
   const [toast, setToast] = useState({ show: false, message: "" });
 
   const navigate = useNavigate();
+  
+    useEffect(() => {
+    const user = localStorage.getItem("user");
+
+    if (!user) {
+      navigate("/login");
+    }
+  }, []);
 
   const showToast = (msg) => {
     setToast({ show: true, message: msg });
