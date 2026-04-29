@@ -72,12 +72,7 @@ export default function Reservation() {
     setTimeout(() => navigate("/home"), 1200);
   } else {
     const errorText = await res.text();
-  
-    if (errorText.includes("Maximum of 3")) {
-      showToast("You have exceeded the maximum of 3 active reservations.");
-    } else {
-      showToast(errorText || "Failed to create reservation.");
-    }
+    showToast(errorText || "Failed to create reservation.");
   }
   };
 
